@@ -1,0 +1,72 @@
+[
+  {
+    "success": true,
+    "duration": 6.490499999999997,
+    "fileSize": 18250,
+    "recordCount": 100,
+    "format": "CSV"
+  },
+  {
+    "success": true,
+    "duration": 87.31040000000002,
+    "fileSize": 15035,
+    "recordCount": 100,
+    "format": "Excel"
+  },
+  {
+    "success": true,
+    "duration": 4.762499999999989,
+    "fileSize": 93915,
+    "recordCount": 500,
+    "format": "CSV"
+  },
+  {
+    "success": true,
+    "duration": 116.09089999999998,
+    "fileSize": 47572,
+    "recordCount": 500,
+    "format": "Excel"
+  },
+  {
+    "success": true,
+    "duration": 4.187199999999962,
+    "fileSize": 188481,
+    "recordCount": 1000,
+    "format": "CSV"
+  },
+  {
+    "success": true,
+    "duration": 101.20429999999999,
+    "fileSize": 87530,
+    "recordCount": 1000,
+    "format": "Excel"
+  },
+  {
+    "success": true,
+    "duration": 11.324600000000032,
+    "fileSize": 384711,
+    "recordCount": 2000,
+    "format": "CSV"
+  },
+  {
+    "success": true,
+    "duration": 207.93090000000007,
+    "fileSize": 168411,
+    "recordCount": 2000,
+    "format": "Excel"
+  },
+  {
+    "success": true,
+    "duration": 23.379400000000032,
+    "fileSize": 973106,
+    "recordCount": 5000,
+    "format": "CSV"
+  },
+  {
+    "success": true,
+    "duration": 540.1262999999999,
+    "fileSize": 411547,
+    "recordCount": 5000,
+    "format": "Excel"
+  }
+]

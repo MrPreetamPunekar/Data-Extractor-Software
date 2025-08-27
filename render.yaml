@@ -1,0 +1,66 @@
+services:
+  - type: web
+    name: data-extractor-backend
+    rootDir: backend
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm ci && npx playwright install --with-deps
+    startCommand: node src/app.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
+      - key: PLAYWRIGHT_BROWSER
+        value: chromium
+      - key: PLAYWRIGHT_HEADLESS
+        value: "true"
+      - key: LOG_LEVEL
+        value: info
+
+  - type: worker
+    name: data-extractor-worker
+    rootDir: worker
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm ci && npx playwright install --with-deps
+    startCommand: node src/worker.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: UPSTASH_REDIS_REST_URL
+        sync: false
+      - key: UPSTASH_REDIS_REST_TOKEN
+        sync: false
+      - key: PLAYWRIGHT_BROWSER
+        value: chromium
+      - key: PLAYWRIGHT_HEADLESS
+        value: "true"
+      - key: LOG_LEVEL
+        value: info

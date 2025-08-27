@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* frontend/src/App.css */
 /* Additional custom styles for the application */
 
@@ -277,4 +278,285 @@
   .table td {
     border-color: #333;
   }
+=======
+/* frontend/src/App.css */
+/* Additional custom styles for the application */
+
+/* App container */
+.App {
+  text-align: center;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Link styles */
+.App-link {
+  color: #61dafb;
+}
+
+/* Keyframe animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  flex: 1;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Card enhancements */
+.card-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Button enhancements */
+.btn-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Form enhancements */
+.form-control-animated {
+  transition: all 0.3s ease;
+}
+
+.form-control-animated:focus {
+  transform: scale(1.01);
+}
+
+/* Table enhancements */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.075);
+}
+
+/* Badge enhancements */
+.badge-animated {
+  transition: all 0.3s ease;
+}
+
+.badge-animated:hover {
+  transform: scale(1.1);
+}
+
+/* Progress bar enhancements */
+.progress-animated {
+  transition: width 0.6s ease;
+}
+
+/* Modal enhancements */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-fade {
+  animation: modalFade 0.3s ease-out;
+}
+
+@keyframes modalFade {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Toast notification enhancements */
+.toast-animated {
+  animation: toastSlideIn 0.5s ease-out;
+}
+
+@keyframes toastSlideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Loading spinner enhancements */
+.spinner-animated {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Chart container enhancements */
+.chart-container-responsive {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .chart-container-responsive {
+    height: 300px;
+  }
+}
+
+/* Navigation enhancements */
+.navbar-animated {
+  transition: all 0.3s ease;
+}
+
+.navbar-animated.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard enhancements */
+.stat-card {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Job status indicators */
+.status-pending {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.status-processing {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.status-completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-failed {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* File upload enhancements */
+.file-upload-area {
+  border: 2px dashed #ced4da;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.file-upload-area:hover {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+.file-upload-area.drag-over {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Export format selector */
+.format-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.format-option {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.format-option:hover {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+.format-option.selected {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+  font-weight: 600;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+  
+  .card-header {
+    background-color: #252525;
+    border-color: #333;
+  }
+  
+  .form-control {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+  
+  .table {
+    color: #e0e0e0;
+  }
+  
+  .table thead th {
+    border-color: #444;
+  }
+  
+  .table td {
+    border-color: #333;
+  }
+>>>>>>> e5d4683 (Initial commit)
 }

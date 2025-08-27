@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "data-extractor-frontend",
   "version": "1.0.0",
@@ -47,4 +48,55 @@
       "last 1 safari version"
     ]
   }
+=======
+{
+  "name": "data-extractor-frontend",
+  "version": "1.0.0",
+  "description": "Frontend UI for AI-Powered Business Data Extractor",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "data-extractor",
+    "web-scraping",
+    "ai",
+    "business-data"
+  ],
+  "author": "AI-Powered Business Data Extractor Team",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "axios": "^1.3.4",
+    "jwt-decode": "^3.1.2",
+    "react-bootstrap": "^2.7.2",
+    "bootstrap": "^5.2.3",
+    "react-icons": "^4.8.0",
+    "react-table": "^7.8.0",
+    "react-chartjs-2": "^5.2.0",
+    "chart.js": "^4.2.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-toastify": "^9.1.2"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+>>>>>>> e5d4683 (Initial commit)
 }
